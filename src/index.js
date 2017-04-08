@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './templates/header.js';
+import Father from './templates/father.js';
+
 import './index.css';
 
 ReactDOM.render(
-  <Header />,
+  <Father />,
   document.getElementById('root')
 );
