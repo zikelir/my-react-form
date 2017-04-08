@@ -1,4 +1,4 @@
-.App {
+.header {
   text-align: center;
 }
 
@@ -17,6 +17,12 @@
 .App-intro {
   font-size: large;
 }
+
+#dateTime {
+  background-color: #222;
+  color: #61DAFB;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
