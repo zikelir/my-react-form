@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import logo from '../logo.svg';
 import '../App.css';
 
-const date = new Date().toLocaleDateString([], {hour: '2-digit', minute:'2-digit', second:'2-digit'});
-
 const user = {
   firstName: 'John',
-  lastName: 'Papada',
-  userTime: date
+  lastName: 'Papada'
 }
-
-
 // const user = undefined; --> for testing the else
 
 function formatName(user) {
-  return user.firstName + ' ' + user.lastName + ' today is ' + user.userTime;
+  return user.firstName + ' ' + user.lastName;
 };
 
 function getGreeting(user) {
@@ -34,10 +29,11 @@ class Header extends Component {
       <div className="header">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2> {getGreeting(user)}</h2> 
+          <div> {getGreeting(user)}</div> 
         </div>
+
         <p className="App-intro">
-                        
+          
         </p>
       </div>
     );
